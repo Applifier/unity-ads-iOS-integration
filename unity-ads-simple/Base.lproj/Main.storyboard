@@ -17,8 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYG-oN-oEA">
-                                <rect key="frame" x="275" y="258" width="51" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYG-oN-oEA">
+                                <rect key="frame" x="204" y="258" width="122" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Play Ad"/>
                                 <connections>
                                     <action selector="showAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OCv-Dm-WIP"/>
@@ -26,10 +27,15 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EYG-oN-oEA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9p5-ic-hEm"/>
+                            <constraint firstItem="EYG-oN-oEA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="amj-z8-S3Y"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="494" y="355"/>
         </scene>
     </scenes>
 </document>
