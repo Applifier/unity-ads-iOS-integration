@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,32 +18,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="adsbanner.png" translatesAutoresizingMaskIntoConstraints="NO" id="aC3-Yq-4we">
+                                <rect key="frame" x="147" y="47" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="KXG-gH-Y66"/>
+                                    <constraint firstAttribute="width" secondItem="aC3-Yq-4we" secondAttribute="height" multiplier="15:8" id="aQW-6T-LO1"/>
+                                    <constraint firstAttribute="height" constant="150" id="kap-Uc-tbN"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aQW-6T-LO1"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTX-ET-V2J">
-                                <rect key="frame" x="254" y="198" width="93" height="30"/>
+                                <rect key="frame" x="141" y="140" width="319" height="103"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Play video Ad"/>
                                 <connections>
                                     <action selector="showAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yVC-7C-YcC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vb-9T-ylv">
-                                <rect key="frame" x="238" y="266" width="124" height="30"/>
+                                <rect key="frame" x="98" y="251" width="405" height="98"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Play Rewarded Ad"/>
                                 <connections>
                                     <action selector="showRewardedAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JyS-b9-jPx"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.10588235294117647" green="0.12941176470588237" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="1Vb-9T-ylv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="43s-5j-1pD"/>
                             <constraint firstItem="qTX-ET-V2J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8AS-kh-kiC"/>
-                            <constraint firstItem="qTX-ET-V2J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="ea1-U6-J67"/>
+                            <constraint firstItem="aC3-Yq-4we" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="CtC-gy-I0H"/>
+                            <constraint firstItem="aC3-Yq-4we" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mg3-xg-OI6"/>
+                            <constraint firstItem="1Vb-9T-ylv" firstAttribute="top" secondItem="qTX-ET-V2J" secondAttribute="bottom" constant="100" id="YJX-wR-N5U"/>
+                            <constraint firstItem="aC3-Yq-4we" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="cDz-b3-J36"/>
+                            <constraint firstItem="qTX-ET-V2J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ea1-U6-J67"/>
                             <constraint firstItem="1Vb-9T-ylv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jfs-RR-fjL"/>
+                            <constraint firstItem="aC3-Yq-4we" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="o4t-Zh-j5e"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CtC-gy-I0H"/>
+                                <exclude reference="cDz-b3-J36"/>
+                                <exclude reference="43s-5j-1pD"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="375" y="380"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="adsbanner.png" width="1000" height="300"/>
+    </resources>
 </document>

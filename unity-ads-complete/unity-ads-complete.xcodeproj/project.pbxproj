@@ -23,6 +23,7 @@
 		1F90920C1C88FDB2008B3BAF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F90920B1C88FDB2008B3BAF /* AdSupport.framework */; };
 		1F9092101C88FE19008B3BAF /* UnityAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1F90920E1C88FE19008B3BAF /* UnityAds.bundle */; };
 		1F9092111C88FE19008B3BAF /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F90920F1C88FE19008B3BAF /* UnityAds.framework */; };
+		1F9092131C8907F3008B3BAF /* adsbanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F9092121C8907F3008B3BAF /* adsbanner.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		1F90920B1C88FDB2008B3BAF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		1F90920E1C88FE19008B3BAF /* UnityAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UnityAds.bundle; sourceTree = "<group>"; };
 		1F90920F1C88FE19008B3BAF /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
+		1F9092121C8907F3008B3BAF /* adsbanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adsbanner.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				1F9091EC1C87C92C008B3BAF /* ViewController.h */,
 				1F9091ED1C87C92C008B3BAF /* ViewController.m */,
 				1F9091EF1C87C92C008B3BAF /* Main.storyboard */,
+				1F9092121C8907F3008B3BAF /* adsbanner.png */,
 				1F9091F21C87C92C008B3BAF /* Assets.xcassets */,
 				1F9091F41C87C92C008B3BAF /* LaunchScreen.storyboard */,
 				1F9091F71C87C92C008B3BAF /* Info.plist */,
@@ -185,6 +188,7 @@
 			files = (
 				1F9092101C88FE19008B3BAF /* UnityAds.bundle in Resources */,
 				1F9091F61C87C92C008B3BAF /* LaunchScreen.storyboard in Resources */,
+				1F9092131C8907F3008B3BAF /* adsbanner.png in Resources */,
 				1F9091F31C87C92C008B3BAF /* Assets.xcassets in Resources */,
 				1F9091F11C87C92C008B3BAF /* Main.storyboard in Resources */,
 			);
@@ -311,6 +315,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -319,6 +325,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fritz.unity-ads-complete";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -326,6 +333,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -334,6 +343,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fritz.unity-ads-complete";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

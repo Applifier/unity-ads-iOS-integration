@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     UIViewController* vc = self.window.rootViewController;
-    [[UnityAds sharedInstance] startWithGameId:@"1002292" andViewController:vc];
+    [[UnityAds sharedInstance] startWithGameId:@"1003843" andViewController:vc];
     return YES;
 }
 

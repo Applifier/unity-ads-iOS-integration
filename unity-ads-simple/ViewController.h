@@ -11,7 +11,5 @@
 
 @interface ViewController : UIViewController
 
-- (void)unityAdsVideoCompleted:(NSString *)rewardItemKey skipped:(BOOL)skipped;
-
 @end
 

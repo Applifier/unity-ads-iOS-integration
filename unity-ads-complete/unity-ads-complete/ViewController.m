@@ -21,17 +21,21 @@
 }
 
 - (IBAction)showAd:(id)sender {
-    [[UnityAds sharedInstance] setZone:@"video"];
-    [[UnityAds sharedInstance] show];
+    if ([[UnityAds sharedInstance]canShowZone:@"video"]) {
+        [[UnityAds sharedInstance] setZone:@"video"];
+        [[UnityAds sharedInstance] show];
+    }
 }
 - (IBAction)showRewardedAd:(id)sender {
-    [[UnityAds sharedInstance] setZone:@"rewardedVideo"];
-    [[UnityAds sharedInstance] show];
+    if ([[UnityAds sharedInstance]canShowZone:@"rewardedVideo"]) {
+        [[UnityAds sharedInstance] setZone:@"rewardedVideo"];
+        [[UnityAds sharedInstance] show];
+    }
 }
 
 - (void)unityAdsVideoCompleted:(NSString *)rewardItemKey skipped:(BOOL)skipped{
     if (!skipped) {
-        //reward player for watching an ad!
+        //Add code here to reward player for watching an ad
     }
 }
 
