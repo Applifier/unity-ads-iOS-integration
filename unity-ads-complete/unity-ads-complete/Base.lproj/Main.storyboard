@@ -18,19 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="adsbanner.png" translatesAutoresizingMaskIntoConstraints="NO" id="aC3-Yq-4we">
-                                <rect key="frame" x="147" y="47" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="500" id="KXG-gH-Y66"/>
-                                    <constraint firstAttribute="width" secondItem="aC3-Yq-4we" secondAttribute="height" multiplier="15:8" id="aQW-6T-LO1"/>
-                                    <constraint firstAttribute="height" constant="150" id="kap-Uc-tbN"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="aQW-6T-LO1"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTX-ET-V2J">
                                 <rect key="frame" x="141" y="140" width="319" height="103"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -49,24 +36,51 @@
                                     <action selector="showRewardedAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JyS-b9-jPx"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="adsbanner.png" translatesAutoresizingMaskIntoConstraints="NO" id="aC3-Yq-4we">
+                                <rect key="frame" x="147" y="47" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="KXG-gH-Y66"/>
+                                    <constraint firstAttribute="width" secondItem="aC3-Yq-4we" secondAttribute="height" multiplier="15:8" id="aQW-6T-LO1"/>
+                                    <constraint firstAttribute="height" constant="150" id="kap-Uc-tbN"/>
+                                    <constraint firstAttribute="width" secondItem="aC3-Yq-4we" secondAttribute="height" multiplier="50:15" id="sD7-10-xNb"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KXG-gH-Y66"/>
+                                        <exclude reference="aQW-6T-LO1"/>
+                                        <exclude reference="kap-Uc-tbN"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.10588235294117647" green="0.12941176470588237" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="qTX-ET-V2J" firstAttribute="trailing" secondItem="1Vb-9T-ylv" secondAttribute="trailing" constant="100" id="30b-kr-LWJ"/>
                             <constraint firstItem="1Vb-9T-ylv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="43s-5j-1pD"/>
                             <constraint firstItem="qTX-ET-V2J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8AS-kh-kiC"/>
                             <constraint firstItem="aC3-Yq-4we" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="CtC-gy-I0H"/>
+                            <constraint firstItem="1Vb-9T-ylv" firstAttribute="top" secondItem="qTX-ET-V2J" secondAttribute="bottom" constant="30" id="HXT-4w-MfH"/>
                             <constraint firstItem="aC3-Yq-4we" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mg3-xg-OI6"/>
                             <constraint firstItem="1Vb-9T-ylv" firstAttribute="top" secondItem="qTX-ET-V2J" secondAttribute="bottom" constant="100" id="YJX-wR-N5U"/>
                             <constraint firstItem="aC3-Yq-4we" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="cDz-b3-J36"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Vb-9T-ylv" secondAttribute="bottom" constant="251" id="dqq-BU-8iN"/>
                             <constraint firstItem="qTX-ET-V2J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ea1-U6-J67"/>
                             <constraint firstItem="1Vb-9T-ylv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jfs-RR-fjL"/>
                             <constraint firstItem="aC3-Yq-4we" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="o4t-Zh-j5e"/>
+                            <constraint firstItem="aC3-Yq-4we" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ply-Vn-TRL"/>
+                            <constraint firstItem="qTX-ET-V2J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="30" id="snQ-8o-q5r"/>
+                            <constraint firstItem="qTX-ET-V2J" firstAttribute="top" secondItem="aC3-Yq-4we" secondAttribute="bottom" constant="35" id="yf1-Tw-Ck2"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="CtC-gy-I0H"/>
                                 <exclude reference="cDz-b3-J36"/>
+                                <exclude reference="30b-kr-LWJ"/>
+                                <exclude reference="ea1-U6-J67"/>
+                                <exclude reference="yf1-Tw-Ck2"/>
                                 <exclude reference="43s-5j-1pD"/>
+                                <exclude reference="YJX-wR-N5U"/>
+                                <exclude reference="dqq-BU-8iN"/>
                             </mask>
                         </variation>
                     </view>
