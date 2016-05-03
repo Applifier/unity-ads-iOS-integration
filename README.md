@@ -73,8 +73,8 @@ Now, in the root View Controller, the following code will play a video ad
 
 ```objc
 if ([[UnityAds sharedInstance] setZone:@"video"] && [[UnityAds sharedInstance]canShowZone:@"video"]) {
-        [[UnityAds sharedInstance] show];
-    }
+  [[UnityAds sharedInstance] show];
+}
 ```
 
 > Note: `setZone` will return false if the selected placement is not valid
