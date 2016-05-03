@@ -72,10 +72,11 @@ Add the @required callback to **root ViewController.m**:
 Now, in the root View Controller, the following code will play a video ad
 
 ```objc
-if ([[UnityAds sharedInstance]canShowZone:@"video"]) {
-        [[UnityAds sharedInstance] setZone:@"video"];
+if ([[UnityAds sharedInstance] setZone:@"video"] && [[UnityAds sharedInstance]canShowZone:@"video"]) {
         [[UnityAds sharedInstance] show];
     }
 ```
+
+> Note: `setZone` will return false if the selected placement is not valid
 
 For more information, check out the [iOS Integration Guide](http://unityads.unity3d.com/help/monetization/integration-guide-ios), the [support Forum](http://forum.unity3d.com/forums/unity-ads.67/), or contact unityads-sales@unity3d.com
