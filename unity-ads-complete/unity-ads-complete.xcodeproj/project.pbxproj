@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F6AD1FE1CD943A900D12C89 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6AD1FD1CD943A900D12C89 /* UnityAds.framework */; };
 		1F9091E81C87C92C008B3BAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9091E71C87C92C008B3BAF /* main.m */; };
 		1F9091EB1C87C92C008B3BAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9091EA1C87C92C008B3BAF /* AppDelegate.m */; };
 		1F9091EE1C87C92C008B3BAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9091ED1C87C92C008B3BAF /* ViewController.m */; };
@@ -22,11 +23,11 @@
 		1F90920A1C88FDAC008B3BAF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9092091C88FDAC008B3BAF /* CFNetwork.framework */; };
 		1F90920C1C88FDB2008B3BAF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F90920B1C88FDB2008B3BAF /* AdSupport.framework */; };
 		1F9092101C88FE19008B3BAF /* UnityAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1F90920E1C88FE19008B3BAF /* UnityAds.bundle */; };
-		1F9092111C88FE19008B3BAF /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F90920F1C88FE19008B3BAF /* UnityAds.framework */; };
 		1F9092131C8907F3008B3BAF /* adsbanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F9092121C8907F3008B3BAF /* adsbanner.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F6AD1FD1CD943A900D12C89 /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
 		1F9091E31C87C92C008B3BAF /* unity-ads-complete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "unity-ads-complete.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F9091E71C87C92C008B3BAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F9091E91C87C92C008B3BAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		1F9092091C88FDAC008B3BAF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		1F90920B1C88FDB2008B3BAF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		1F90920E1C88FE19008B3BAF /* UnityAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UnityAds.bundle; sourceTree = "<group>"; };
-		1F90920F1C88FE19008B3BAF /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
 		1F9092121C8907F3008B3BAF /* adsbanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adsbanner.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +63,7 @@
 				1F9092021C88FD8E008B3BAF /* CoreFoundation.framework in Frameworks */,
 				1F9092001C88FD81008B3BAF /* CoreMedia.framework in Frameworks */,
 				1F9091FE1C88FD7A008B3BAF /* SystemConfiguration.framework in Frameworks */,
-				1F9092111C88FE19008B3BAF /* UnityAds.framework in Frameworks */,
+				1F6AD1FE1CD943A900D12C89 /* UnityAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,8 +115,8 @@
 		1F90920D1C88FDBB008B3BAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F6AD1FD1CD943A900D12C89 /* UnityAds.framework */,
 				1F90920E1C88FE19008B3BAF /* UnityAds.bundle */,
-				1F90920F1C88FE19008B3BAF /* UnityAds.framework */,
 				1F90920B1C88FDB2008B3BAF /* AdSupport.framework */,
 				1F9092091C88FDAC008B3BAF /* CFNetwork.framework */,
 				1F9092071C88FDA3008B3BAF /* AVFoundation.framework */,
