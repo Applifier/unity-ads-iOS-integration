@@ -52,18 +52,16 @@ Initialize UnityAds to your **AppDelegate**
   ```
   > The game ID in the example project is **1003843**, you need to replace this number with your own game ID
 
-3. In the root **ViewController.m**
-  ```objC
-#import "AppDelegate.h"
-  ```
-4. In the root **ViewController.m**, add the @required callback  
-```objc    
-- (void)unityAdsVideoCompleted:(NSString *)rewardItemKey skipped:(BOOL)skipped{
-   if (!skipped) {
-    //Your code goes here...
-    //reward the player for watching an ad
+3. In your root **ViewController.m**, add the @required callback  
+`#import "AppDelegate.h"`
+
+  ```objc
+  - (void)unityAdsVideoCompleted:(NSString *)rewardItemKey skipped:(BOOL)skipped{
+    if (!skipped) {
+      //Your code goes here...
+      //reward the player for watching an ad
+    }
   }
-}
 ```
 
 > Note: **rewardItemKey** was deprecated; Use custom zones in the [dashboard](https://dashboard.unityads.unity3d.com) to track reward types
