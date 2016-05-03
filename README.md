@@ -57,20 +57,20 @@ Initialize UnityAds to your **AppDelegate**
 #import "AppDelegate.h"
   ```
 4. In the root **ViewController.m**, add the @required callback  
-  ```objc    
+```objc    
 - (void)unityAdsVideoCompleted:(NSString *)rewardItemKey skipped:(BOOL)skipped{
    if (!skipped) {
       //reward player for watching an ad!
   }
 }
-  ```
+```
 
 > Note: **rewardItemKey** was deprecated; Use custom zones in the [dashboard](https://dashboard.unityads.unity3d.com) to track reward types
 
 ### Show a Video Ad
 
-Finally, in the root View Controller, the following code will play a video ad  
-  ```objc
+Finally, in the root View Controller, the following code will play a video ad
+```objc
 if ([[UnityAds sharedInstance] setZone:@"video"] && [[UnityAds sharedInstance]canShow]) {
   [[UnityAds sharedInstance] show];
 }
