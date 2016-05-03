@@ -60,7 +60,8 @@ Initialize UnityAds to your **AppDelegate**
 ```objc    
 - (void)unityAdsVideoCompleted:(NSString *)rewardItemKey skipped:(BOOL)skipped{
    if (!skipped) {
-      //reward player for watching an ad!
+    //Your code goes here...
+    //reward the player for watching an ad
   }
 }
 ```
