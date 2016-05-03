@@ -53,7 +53,7 @@ Initialize UnityAds to your **AppDelegate**
 
 > NOTE: The game ID in the example project is **1003843**, you need to replace this number with your own game ID
 
-Add the @required callback to **root ViewController.m**:
+3. Add the @required callback to **root ViewController.m**:
 
 `#import "AppDelegate.h"`
 
@@ -69,7 +69,7 @@ Add the @required callback to **root ViewController.m**:
 
 ### Show a Video Ad
 
-Now, in the root View Controller, the following code will play a video ad
+Finally, in the root View Controller, the following code will play a video ad
 
 ```objc
 if ([[UnityAds sharedInstance] setZone:@"video"] && [[UnityAds sharedInstance]canShowZone:@"video"]) {
