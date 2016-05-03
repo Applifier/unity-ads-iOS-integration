@@ -56,13 +56,13 @@ Initialize UnityAds to your **AppDelegate**
   ```objC
 #import "AppDelegate.h"
 ```
-4. In the root **ViewController.m**, add the @required callback
+4. In the root **ViewController.m**, add the @required callback  
   ```objC
-  - (void)unityAdsVideoCompleted:(NSString *)rewardItemKey skipped:(BOOL)skipped{
-    if (!skipped) {
-        //reward player for watching an ad!
-    }
+- (void)unityAdsVideoCompleted:(NSString *)rewardItemKey skipped:(BOOL)skipped{
+   if (!skipped) {
+      //reward player for watching an ad!
   }
+}
 ```
 
 > Note: **rewardItemKey** was deprecated; Use custom zones in the [dashboard](https://dashboard.unityads.unity3d.com) to track reward types
