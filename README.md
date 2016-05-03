@@ -49,33 +49,32 @@ Initialize UnityAds to your **AppDelegate**
   
     return YES;
 }
-```
+  ```
   The game ID in the example project is **1003843**, you need to replace this number with your own game ID
 
 3. In the root **ViewController.m**
   ```objC
 #import "AppDelegate.h"
-```
+  ```
 4. In the root **ViewController.m**, add the @required callback  
-  ```objC
+  ```objc    
 - (void)unityAdsVideoCompleted:(NSString *)rewardItemKey skipped:(BOOL)skipped{
    if (!skipped) {
       //reward player for watching an ad!
   }
 }
-```
+  ```
 
 > Note: **rewardItemKey** was deprecated; Use custom zones in the [dashboard](https://dashboard.unityads.unity3d.com) to track reward types
 
 ### Show a Video Ad
 
-Finally, in the root View Controller, the following code will play a video ad
-
-```objc
-if ([[UnityAds sharedInstance] setZone:@"video"] && [[UnityAds sharedInstance]canShowZone:@"video"]) {
+Finally, in the root View Controller, the following code will play a video ad  
+  ```objc
+if ([[UnityAds sharedInstance] setZone:@"video"] && [[UnityAds sharedInstance]canShow]) {
   [[UnityAds sharedInstance] show];
 }
-```
+  ```
 
 > Note: `setZone` will return false if the selected placement is not valid
 
