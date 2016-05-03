@@ -40,8 +40,8 @@ Initialize UnityAds to your **AppDelegate**
 1. In **AppDelegate.h**:  
   `#import <UnityAds/UnityAds.h>`
 
-2. In **AppDelegate.m**:  
-```ObjC
+2. In **AppDelegate.m**  
+  ```ObjC
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   
     UIViewController* vc = self.window.rootViewController;
@@ -50,14 +50,13 @@ Initialize UnityAds to your **AppDelegate**
     return YES;
 }
 ```
+  The game ID in the example project is **1003843**, you need to replace this number with your own game ID
 
-> NOTE: The game ID in the example project is **1003843**, you need to replace this number with your own game ID
-
-3. Add the @required callback to **root ViewController.m**:
-
-`#import "AppDelegate.h"`
-
-```objC
+3. Add the @required callback to **root ViewController.m**:  
+  
+  ```objC
+  #import "AppDelegate.h"
+  
 - (void)unityAdsVideoCompleted:(NSString *)rewardItemKey skipped:(BOOL)skipped{
     if (!skipped) {
         //reward player for watching an ad!
