@@ -43,14 +43,14 @@ Initialize UnityAds to your **AppDelegate**
 2. In **AppDelegate.m**  
   ```ObjC
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+  UIViewController* vc = self.window.rootViewController;
+  [[UnityAds sharedInstance] startWithGameId:@"1002292" andViewController:vc];
   
-    UIViewController* vc = self.window.rootViewController;
-    [[UnityAds sharedInstance] startWithGameId:@"1002292" andViewController:vc];
-  
-    return YES;
+  return YES;
 }
   ```
-  The game ID in the example project is **1003843**, you need to replace this number with your own game ID
+  > The game ID in the example project is **1003843**, you need to replace this number with your own game ID
 
 3. In the root **ViewController.m**
   ```objC
