@@ -12,7 +12,7 @@
 @interface ViewController () <UnityAdsDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *videoButton;
 @property (weak, nonatomic) IBOutlet UIButton *rewardedButton;
-@property (weak, nonatomic) IBOutlet UILabel *loadingLabel;
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 
 @end
 
@@ -22,25 +22,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _videoButton.hidden = true;
-    _rewardedButton.hidden = true;
-    
+    //_retryStatusButton.enabled = false;
     [[UnityAds sharedInstance] setDelegate:self];
 }
 
 - (IBAction)showAd:(id)sender {
+    //show an ad with the "video" placement (5-second skip)
     if ([[UnityAds sharedInstance]canShow] && [[UnityAds sharedInstance] setZone:@"video"]) {
         [[UnityAds sharedInstance] show];
     }
 }
 
 - (IBAction)showRewardedAd:(id)sender {
+    //show an ad with the "rewardedVideo" placement (unskippable)
     if ([[UnityAds sharedInstance]canShow] && [[UnityAds sharedInstance] setZone:@"rewardedVideo"]) {
         [[UnityAds sharedInstance] show];
     }
 }
 
-//--- Required callback ---
 - (void)unityAdsVideoCompleted:(NSString *)rewardItemKey skipped:(BOOL)skipped{
     NSLog(@"Video ended: %@", skipped ? @"skipped" : @"completed");
     if (!skipped) {
@@ -49,8 +48,14 @@
 }
 
 - (void)unityAdsFetchCompleted {
-    _loadingLabel.hidden = true;
     _videoButton.hidden = false;
     _rewardedButton.hidden = false;
+    _statusLabel.hidden = true;
 }
+
+
+- (void)unityAdsFetchFailed {
+    _statusLabel.text = @"Initialization failed (womp womp)";
+}
+
 @end

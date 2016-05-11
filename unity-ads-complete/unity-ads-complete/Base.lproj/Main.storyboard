@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vb-9T-ylv">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vb-9T-ylv">
                                 <rect key="frame" x="98" y="251" width="405" height="98"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -45,13 +45,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Unity Ads Loading ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5i-3Z-9FF">
-                                <rect key="frame" x="163" y="377" width="158" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTX-ET-V2J">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTX-ET-V2J">
                                 <rect key="frame" x="141" y="140" width="319" height="103"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -60,6 +54,12 @@
                                     <action selector="showAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yVC-7C-YcC"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Initializing ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ooj-i3-sKN">
+                                <rect key="frame" x="204" y="328" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.10588235294117647" green="0.12941176470588237" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -70,13 +70,13 @@
                             <constraint firstItem="1Vb-9T-ylv" firstAttribute="top" secondItem="qTX-ET-V2J" secondAttribute="bottom" constant="30" id="HXT-4w-MfH"/>
                             <constraint firstItem="aC3-Yq-4we" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mg3-xg-OI6"/>
                             <constraint firstItem="aC3-Yq-4we" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="PM5-uZ-J01"/>
+                            <constraint firstItem="Ooj-i3-sKN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XRe-MU-13S"/>
                             <constraint firstItem="1Vb-9T-ylv" firstAttribute="top" secondItem="qTX-ET-V2J" secondAttribute="bottom" constant="100" id="YJX-wR-N5U"/>
                             <constraint firstItem="aC3-Yq-4we" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="cDz-b3-J36"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Vb-9T-ylv" secondAttribute="bottom" constant="251" id="dqq-BU-8iN"/>
-                            <constraint firstItem="i5i-3Z-9FF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eW9-An-zjk"/>
                             <constraint firstItem="qTX-ET-V2J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ea1-U6-J67"/>
-                            <constraint firstItem="i5i-3Z-9FF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hyK-de-PxJ"/>
                             <constraint firstItem="1Vb-9T-ylv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jfs-RR-fjL"/>
+                            <constraint firstItem="Ooj-i3-sKN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mxD-PY-0eQ"/>
                             <constraint firstItem="aC3-Yq-4we" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="o4t-Zh-j5e"/>
                             <constraint firstItem="aC3-Yq-4we" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ply-Vn-TRL"/>
                             <constraint firstItem="qTX-ET-V2J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="30" id="snQ-8o-q5r"/>
@@ -98,8 +98,8 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="loadingLabel" destination="i5i-3Z-9FF" id="wuS-nX-ufQ"/>
                         <outlet property="rewardedButton" destination="1Vb-9T-ylv" id="ej6-Cb-Yy0"/>
+                        <outlet property="statusLabel" destination="Ooj-i3-sKN" id="Wgp-ob-8ou"/>
                         <outlet property="videoButton" destination="qTX-ET-V2J" id="Jf5-hH-q65"/>
                     </connections>
                 </viewController>

@@ -323,7 +323,7 @@
 				);
 				INFOPLIST_FILE = "unity-ads-complete/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fritz.unity-ads-complete";
+				PRODUCT_BUNDLE_IDENTIFIER = "fritz.unity-ads-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -341,7 +341,7 @@
 				);
 				INFOPLIST_FILE = "unity-ads-complete/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fritz.unity-ads-complete";
+				PRODUCT_BUNDLE_IDENTIFIER = "fritz.unity-ads-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
