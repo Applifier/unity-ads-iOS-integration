@@ -28,7 +28,7 @@
 
 /* Begin PBXFileReference section */
 		1F6AD1FD1CD943A900D12C89 /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
-		1F9091E31C87C92C008B3BAF /* unity-ads-complete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "unity-ads-complete.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F9091E31C87C92C008B3BAF /* unity-ads-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "unity-ads-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F9091E71C87C92C008B3BAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F9091E91C87C92C008B3BAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F9091EA1C87C92C008B3BAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		1F9091DA1C87C92C008B3BAF = {
 			isa = PBXGroup;
 			children = (
-				1F9091E51C87C92C008B3BAF /* unity-ads-complete */,
+				1F9091E51C87C92C008B3BAF /* unity-ads-example */,
 				1F9091E41C87C92C008B3BAF /* Products */,
 				1F90920D1C88FDBB008B3BAF /* Frameworks */,
 			);
@@ -82,12 +82,12 @@
 		1F9091E41C87C92C008B3BAF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1F9091E31C87C92C008B3BAF /* unity-ads-complete.app */,
+				1F9091E31C87C92C008B3BAF /* unity-ads-example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1F9091E51C87C92C008B3BAF /* unity-ads-complete */ = {
+		1F9091E51C87C92C008B3BAF /* unity-ads-example */ = {
 			isa = PBXGroup;
 			children = (
 				1F9091E91C87C92C008B3BAF /* AppDelegate.h */,
@@ -101,6 +101,7 @@
 				1F9091F71C87C92C008B3BAF /* Info.plist */,
 				1F9091E61C87C92C008B3BAF /* Supporting Files */,
 			);
+			name = "unity-ads-example";
 			path = "unity-ads-complete";
 			sourceTree = "<group>";
 		};
@@ -132,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1F9091E21C87C92C008B3BAF /* unity-ads-complete */ = {
+		1F9091E21C87C92C008B3BAF /* unity-ads-example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F9091FA1C87C92C008B3BAF /* Build configuration list for PBXNativeTarget "unity-ads-complete" */;
+			buildConfigurationList = 1F9091FA1C87C92C008B3BAF /* Build configuration list for PBXNativeTarget "unity-ads-example" */;
 			buildPhases = (
 				1F9091DF1C87C92C008B3BAF /* Sources */,
 				1F9091E01C87C92C008B3BAF /* Frameworks */,
@@ -144,9 +145,9 @@
 			);
 			dependencies = (
 			);
-			name = "unity-ads-complete";
+			name = "unity-ads-example";
 			productName = "unity-ads-complete";
-			productReference = 1F9091E31C87C92C008B3BAF /* unity-ads-complete.app */;
+			productReference = 1F9091E31C87C92C008B3BAF /* unity-ads-example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +164,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1F9091DE1C87C92C008B3BAF /* Build configuration list for PBXProject "unity-ads-complete" */;
+			buildConfigurationList = 1F9091DE1C87C92C008B3BAF /* Build configuration list for PBXProject "unity-ads-example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -176,7 +177,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F9091E21C87C92C008B3BAF /* unity-ads-complete */,
+				1F9091E21C87C92C008B3BAF /* unity-ads-example */,
 			);
 		};
 /* End PBXProject section */
@@ -324,7 +325,7 @@
 				INFOPLIST_FILE = "unity-ads-complete/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fritz.unity-ads-example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "unity-ads-example";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -342,7 +343,7 @@
 				INFOPLIST_FILE = "unity-ads-complete/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fritz.unity-ads-example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "unity-ads-example";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -350,7 +351,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F9091DE1C87C92C008B3BAF /* Build configuration list for PBXProject "unity-ads-complete" */ = {
+		1F9091DE1C87C92C008B3BAF /* Build configuration list for PBXProject "unity-ads-example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F9091F81C87C92C008B3BAF /* Debug */,
@@ -359,7 +360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F9091FA1C87C92C008B3BAF /* Build configuration list for PBXNativeTarget "unity-ads-complete" */ = {
+		1F9091FA1C87C92C008B3BAF /* Build configuration list for PBXNativeTarget "unity-ads-example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F9091FB1C87C92C008B3BAF /* Debug */,
